@@ -2,6 +2,8 @@ resource "helm_release" "kuberpult" {
   name  = "kuberpult"
   chart = "https://github.com/freiheit-com/kuberpult/releases/download/0.4.44/kuberpult-0.4.44.tgz"
 
+  version = "0.4.44"
+
   cleanup_on_fail = true
 
   set {
